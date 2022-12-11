@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<!-- saved from url=(0047)https://gostay.tbroc.gov.tw/customer_apply_page -->
+<html lang="zh-TW"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Required meta tags -->
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="description">
+    <meta content="" name="author">
+    <link rel="shortcut icon" href="https://taiwan.taiwanstay.net.tw/gostay/assets/login/images/favicon.ico">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./悠遊國旅個別旅客住宿優惠活動_files/bootstrap.css">
+    <link rel="stylesheet" href="./悠遊國旅個別旅客住宿優惠活動_files/custom.css">
+
+    <!-- 圖片剪裁 -->
+    <link href="./悠遊國旅個別旅客住宿優惠活動_files/cropper.css" rel="stylesheet">
+    <!-- sweet alert2 -->
+    <link href="./悠遊國旅個別旅客住宿優惠活動_files/sweetalert2.css" rel="stylesheet">
+
+    <style type="text/css">
+        .loading {
+            border: 3px solid #FFAA33;
+            border-right: 3px solid #fff;
+            border-bottom: 3px solid #fff;
+            height: 30px;
+            width: 30px;
+            border-radius: 50%;
+            -webkit-animation: loading 1s infinite linear;
+            -moz-animation: loading 1s infinite linear;
+            -o-animation: loading 1s infinite linear;
+            animation: loading 1s infinite linear;
+        }
+        @-webkit-keyframes loading {
+            from {
+                -webkit-transform: rotate(0deg);
+            }
+            to {
+                -webkit-transform: rotate(360deg);
+            }
+        }
+        @-moz-keyframes loading {
+            from {
+                -moz-transform: rotate(0deg);
+            }
+            to {
+                -moz-transform: rotate(360deg);
+            }
+        }
+        @-o-keyframes loading {
+            from {
+                -o-transform: rotate(0deg);
+            }
+            to {
+                -o-transform: rotate(360deg);
+            }
+        }
+        @keyframes loading {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+        .show_text {
+            animation: flicker 2s ease-in-out infinite alternate;
+        }
+        @keyframes flicker{
+            0%,
+            100% {
+                text-shadow: 0 0 20px #fc0707, 0 0 100px #fa850a, 0 0 20px #fc0707;
+            }
+            50% {
+                text-shadow: 0 0 50px #fff, 0 0 150px #fff, 0 0 50px #fff;
+                color: #18aa92;
+            }
+        }
+    </style>
+    <title>悠遊國旅個別旅客住宿優惠活動</title>
+</head>
+
+<body>
+<!-- content -->
+<div class="banner">
+    <img class="w-100" src="./悠遊國旅個別旅客住宿優惠活動_files/banner.png" alt="悠遊國旅banner">
+</div>
+
+<header class="bg-light">
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="https://gostay.tbroc.gov.tw/"><img src="./悠遊國旅個別旅客住宿優惠活動_files/footer-logo.png" alt="logo"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://gostay.tbroc.gov.tw/">活動首頁</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://gostay.tbroc.gov.tw/hotel">參與業者</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://gostay.tbroc.gov.tw/phone">諮詢專線</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://gostay.tbroc.gov.tw/ota">核定訂房平台</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://gostay.tbroc.gov.tw/qa">Q &amp; A</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://gostay.tbroc.gov.tw/hotel_login_page">業者專區</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://gostay.tbroc.gov.tw/user/index">機關專區</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+</header>
+<div class="banner-bt2">
+    <h2 class="h4 show_text">民眾客服專線0800-211-734(每日08:30-18:30)</h2>
+</div>
+
+<div class="container content-box">
+    <h3>申請方式</h3>
+    <p>
+        使用獎助前，請您先上傳個人身分證明文件：<br><br>
+        1. 您上傳之個人身分文件僅供本次旅遊獎助核銷之用，並依相關法令規範辦理，請您放心上傳。<br><br>
+        2. 上傳程序如下：<br><br>
+        (1) 點擊「上傳證件 /拍攝證件」將<span style="color:red;font-weight:bold;">身分證或健保卡</span>正面清晰且無反光檔案上傳或拍照上傳（健保卡無照片亦可）。<br><br>
+        (2) 如旅客入住未符合加碼資格之旅宿業，且欲獲得加碼折抵，則應於入住前或入住當日於活動專區掃描並上傳完整接種3劑疫苗證明，並於入住時出示證明，方可獲得加碼獎助折抵。請點擊「上傳完整接種3劑疫苗證明」將清晰且無反光之檔案上傳或拍照上傳。<br><br>
+        (3) 點擊「下一步」進入圖片裁切，圖片可調整大小或翻轉，請調整要上傳之“完整”證件圖片對準在紅色框內。<br><br>
+        (4) 完成後點擊「確定送出」。<br><br>
+        (5) 接下來，請您<span style="font-weight:bold;">輸入姓名（中文）及手機號碼，並核對身分證字號</span>，若證號不對，表示您的照片不夠清晰，請你重新操作上述上傳證件的步驟。<br><br>
+        3. 【提醒】本案為獎助活動，因經費預算有限，<span style="color:red;font-weight:bold;">活動至預算用罄為止</span>，如經費提前用罄，本局至遲將於經費用罄2週前公告停止受理獎助申請，如旅客因活動預算已用罄而欲取消訂房，或如於入住後業者已辦理獎助申請手續後始要求臨時退房，旅客及旅宿業者雙方均應依「個別旅客訂房定型化契約」規定辦理。<br><br>
+    </p>
+    <a href="https://taiwan.taiwanstay.net.tw/gostay/doc/%E6%B0%91%E7%9C%BE%E7%89%88%E7%B3%BB%E7%B5%B1%E4%BD%BF%E7%94%A8%E8%AA%AA%E6%98%8E_20220629.pdf" target="_blank"><button type="button" class="btn btn-primary">悠遊國旅民眾使用說明</button></a>
+    <a href="https://taiwan.taiwanstay.net.tw/gostay/doc/%E6%82%A0%E9%81%8A%E5%9C%8B%E6%97%85%E5%80%8B%E5%88%A5%E6%97%85%E5%AE%A2%E4%BD%8F%E5%AE%BF%E5%84%AA%E6%83%A0%E6%B4%BB%E5%8B%95%E5%80%8B%E8%B3%87%E5%AE%A3%E5%91%8A%E6%9A%A8%E4%BD%BF%E7%94%A8%E8%80%85%E6%A2%9D%E6%AC%BE.pdf" target="_blank"><button type="button" class="btn btn-primary">悠遊國旅個資宣告暨使用者條款</button></a>
+    <hr>
+    <h3>申請資料上傳</h3>
+    <div class="row mg-top20">
+        <div class="col-md-12 center">
+            <div class="row">
+                <div class="col-md-4">
+                    <img class="img-fluid" src="./悠遊國旅個別旅客住宿優惠活動_files/u37.jpg" alt="身分證件範例">
+                    <h4>身分證件範例</h4>
+                </div>
+                <div class="col-md-8">
+                    <img class="img-fluid" src="./悠遊國旅個別旅客住宿優惠活動_files/sample.jpg" alt="健保卡範例">
+                    <h4>健保卡範例</h4>
+                </div>
+            </div>
+            <div id="pic_file_div">
+                <h5 id="pic_file_name"></h5>
+            </div>
+            <input onchange="readFile(this,1)" style="width: 1px;height: 1px;position: fixed;right: 100%;bottom: 100%;" accept="image/*" type="file" name="file" id="pic_file">
+            <label for="pic_file" class="btn btn-primary">上傳證件 /拍攝證件(不接受HEIC格式)</label>
+            <button type="button" onclick="start()" class="btn btn-primary">下一步</button>
+
+            <!-- 圖片預覽 裁切 -->
+            <div class="container" style="display:none" id="cut_div">
+                <div class="card">
+                    <div class="card-header">
+                        <h2>圖片裁切</h2><br>
+                        <h3>請將整張證件置於紅框內</h3>
+                    </div>
+                    <div class="card-body card-padding">
+                        <div class="row">
+                            <div class="col-sm"></div>
+                            <div class="col-sm">
+                                <div class="thumbnail">
+                                    <div class="box" style="width:275px;height:250px;overflow: hidden">
+                                        <img id="image" src="https://gostay.tbroc.gov.tw/customer_apply_page">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm"></div>
+                        </div>
+                    </div>
+                    <div class="card-body card-padding">
+                        <div class="row">
+                            <div class="col-sm"></div>
+                            <div class="col-sm">
+                                <div class="thumbnail">
+                                    <div class="preview" style="width:275px;height:250px;overflow: hidden;">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm"></div>
+                    <div class="col-sm-3 row">
+                        <div>
+                            <button onclick="rotate()" type="button" class="btn btn-primary">圖片翻轉</button>
+                            <button id="send_button" onclick="save()" type="button" class="btn btn-primary">確定送出</button>
+                            <div style="display:none;" class="loading" id="loading_div"></div>
+                        </div>
+                    </div>
+                    <div class="col-sm"></div>
+                </div>
+            </div>
+            <!-- 圖片預覽 裁切 結束 -->
+        </div>
+    </div>
+    <br>
+    <br>
+    <div class="row mg-top20">
+        <div class="col-md-12 center">
+            <div class="row">
+                <div class="col-md-12">
+                    <img class="img-fluid" src="./悠遊國旅個別旅客住宿優惠活動_files/ex.jpg" alt="疫苗接種證明範例">
+                    <h4>疫苗接種證明範例</h4>
+                </div>
+            </div>
+            <div id="pic_file_div2">
+                <h5 id="pic_file_name2"></h5>
+            </div>
+            <input onchange="readFile(this,2)" style="width: 1px;height: 1px;position: fixed;right: 100%;bottom: 100%;" accept="image/*" type="file" name="file2" id="pic_file2">
+            <label for="pic_file2" class="btn btn-primary">上傳/拍攝上傳完整接種3劑疫苗證明(不接受HEIC格式)</label>
+            <!--<button type="button" onclick="start(2)" class="btn btn-primary">確認</button>-->
+            <br>
+            <div class="container">
+                <div class="card">
+                    <div class="card-header">
+                        <h2>圖片預覽</h2><br>
+                    </div>
+                    <div class="card-body card-padding">
+                        <div class="row">
+                            <div class="col-sm"></div>
+                            <div class="col-sm">
+                                <div class="thumbnail">
+                                    <div class="box">
+                                        <img id="image2" src="https://gostay.tbroc.gov.tw/customer_apply_page">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <form class="needs-validation" novalidate="" action="https://gostay.tbroc.gov.tw/customer_apply" method="post" id="send_form">
+        <input type="hidden" name="_token" value="Ehb79Pe3aB0pL33mwLceCmQ0rBwnT1ZjbwhtbRkR">        <div class="mb-3">
+            <label for="digital">姓名</label>
+            <input type="text" class="form-control" name="name" id="name" placeholder="姓名" required="">
+            <div class="invalid-feedback">
+                姓名
+            </div>
+        </div>
+        <div class="mb-3">
+            <label for="digital">身分證字號</label>
+            <input type="text" readonly="readonly" class="form-control" name="idno" id="idno" placeholder="身分證字號" required="">
+            <div class="invalid-feedback">
+                輸入您的身分證字號
+            </div>
+        </div>
+        <div class="mb-3">
+            <label>手機(不接受市話)</label>
+                <input type="text" class="form-control" id="phone" name="phone" placeholder="範例：09XX123456" required="">
+            <div class="invalid-feedback">
+                輸入您的手機
+            </div>
+        </div>
+        <input type="hidden" id="birthday" name="birthday">
+        <label>生日(請輸入民國年)</label>
+        <br>
+        <br>
+        <div class="row">
+            &nbsp;&nbsp;&nbsp;民國<div class="col-sm-1"><input type="text" class="form-control" id="year"></div>年
+            <div class="col-sm-1"><input type="text" class="form-control" id="month"></div>月
+            <div class="col-sm-1"><input type="text" class="form-control" id="day"></div>日
+        </div>
+        <br>
+        <div class="mb-3">
+            <label for="date">現居城市</label>
+            <select name="city" id="city" class="form-control">
+                <option value="">請選擇現居城市</option>
+                <option value="1">基隆市</option>
+                <option value="2">臺北市</option>
+                <option value="3">新北市</option>
+                <option value="4">桃園市</option>
+                <option value="5">新竹市</option>
+                <option value="6">新竹縣</option>
+                <option value="7">苗栗縣</option>
+                <option value="8">臺中市</option>
+                <option value="9">彰化縣</option>
+                <option value="10">南投縣</option>
+                <option value="11">雲林縣</option>
+                <option value="12">嘉義市</option>
+                <option value="13">嘉義縣</option>
+                <option value="14">臺南市</option>
+                <option value="15">高雄市</option>
+                <option value="16">屏東縣</option>
+                <option value="17">臺東縣</option>
+                <option value="18">花蓮縣</option>
+                <option value="19">宜蘭縣</option>
+                <option value="20">澎湖縣</option>
+                <option value="21">金門縣</option>
+                <option value="22">連江縣</option>
+            </select>
+        </div>
+        <div class="mb-3">
+            <label>電子信箱(選填)</label><br>
+            <label>電子信箱為選填，民眾於申請成功後將寄出「申請完成」確認信，若未填寫電子信箱或電子信箱錯誤，系統仍會於申請結束後以視窗提示「申請完成」訊息</label>
+            <input type="text" class="form-control" id="email" name="email" placeholder="申請成功後寄出確認信" required="">
+        </div>
+        <br>
+        <div class="mb-6">
+            <input type="checkbox" id="customControlValidation">
+            <label for="customControlValidation">本人已詳讀並同意 悠遊國旅個別旅客住宿優惠活動使用者條款暨個資宣告</label>
+        </div>
+        <div class="mb-6">
+            <input type="checkbox" id="customControlValidation2">
+            <label for="customControlValidation2">本人已了解並同意，<span style="color:red;font-weight:bold;">本項上傳身分證明文件是於入住前先建立檔案，需於實際入住時提示身分證或健保卡（任一）</span></label>
+            <label for="customControlValidation2"><span style="color:red;font-weight:bold;">供旅宿業者核對為本人入住，方可獲得住宿優惠折抵</span></label>
+        </div>
+        <br>
+        <div class="mb-6">
+            <input type="checkbox" id="customControlValidation3">
+            <label for="customControlValidation3">本人已了解並同意，如本人入住符合加碼資格之旅宿業，則由旅宿業者折抵加碼獎助予入住者本人；如入住未符合加碼資格之旅宿業</label>
+            <label for="customControlValidation3">如欲獲得加碼折抵，則應於入住前或入住當日至活動專區掃描並上傳完整接種3劑疫苗證明，並於入住時出示證明，方可獲得加碼獎助折抵。</label>
+        </div>
+        <br>
+        <input type="hidden" id="base64_pic" name="base64_pic" value="">
+        <input type="hidden" id="base64_pic2" name="base64_pic2" value="">
+        <button id="send_btn" class="btn btn-primary btn-lg btn-block" onclick="send()" type="button">確認送出</button>
+    </form>
+    <input type="hidden" id="base64_send" name="base64_send" value="">
+    <input type="hidden" id="base64_send2" name="base64_send2" value="">
+</div>
+<!-- End content -->
+<footer>
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-6">
+                <img src="./悠遊國旅個別旅客住宿優惠活動_files/footer-logo.png" alt="logo">
+            </div>
+            <div class="col-6">
+                <h2 class="h6 right">中華民國交通部觀光局 版權所有</h2>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="./悠遊國旅個別旅客住宿優惠活動_files/jquery-3.3.1.min.js.下載" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<script src="./悠遊國旅個別旅客住宿優惠活動_files/bootstrap.min.js.下載"></script>
+<!-- 圖片剪裁 -->
+<script src="./悠遊國旅個別旅客住宿優惠活動_files/cropper.js.下載"></script>
+<script src="./悠遊國旅個別旅客住宿優惠活動_files/jquery-cropper.js.下載"></script>
+<!-- sweet alert2 -->
+<script src="./悠遊國旅個別旅客住宿優惠活動_files/sweetalert2.min.js.下載"></script>
+<script>
+    $(document).ready(function(){
+            });
+
+    function readFile(obj, num){
+        if(num == 1){
+            $('#cut_div').attr('style', 'display:none');
+            $('#image').cropper('destroy');
+            $('#pic_file_name').remove();
+            $('#pic_file_div').append(
+                '<h5 id="pic_file_name">'+ $('#pic_file').val() +'</h5>'
+            );
+            var file = obj.files[0];
+            var reader = new FileReader();
+            reader.readAsDataURL(file);
+
+            reader.onload = function(e){
+                dealImage(this.result,{width:3200},function(base){
+                document.getElementById('image').setAttribute('src',base);
+                });
+            };
+        }else{
+            var file = obj.files[0];
+            var reader = new FileReader();
+            reader.readAsDataURL(file);
+
+            reader.onload = function(e){
+                dealImage(this.result,{width:400},function(base){
+                    $('#base64_pic2').val(base);
+                    document.getElementById('image2').setAttribute('src',base);
+                    alert('上傳成功');
+                });
+            };
+        }
+        
+    }
+
+    function start() {
+        $('#cut_div').attr('style', '');
+        $('#image').cropper({
+            dragMode: "move",
+            preview: ".preview",
+            aspectRatio: 400/250,
+            viewMode: 1,
+            modal:false,
+            scalable:false,
+            guides : false,
+            cropBoxResizable: false,
+            cropBoxMovable: false,
+            center: true,
+        });
+    }
+
+    function dealImage(path, obj, callback){
+        var img = new Image();
+        img.src = path;
+        img.onload = function(){
+            var that = this;
+            // 預設按比例壓縮
+            var w = that.width,
+                h = that.height,
+                scale = w / h;
+            w = obj.width || w;
+            h = obj.height || (w / scale);
+            // 生成canvas
+            var canvas = document.createElement('canvas');
+            var ctx = canvas.getContext('2d');
+            // 建立屬性節點
+            var anw = document.createAttribute("width");
+            anw.nodeValue = w;
+            var anh = document.createAttribute("height");
+            anh.nodeValue = h;
+            canvas.setAttributeNode(anw);
+            canvas.setAttributeNode(anh);
+            ctx.drawImage(that, 0, 0, w, h);
+            // quality值越小，所繪製出的影象越模糊
+            var base64 = canvas.toDataURL('image/jpeg', 1);
+            // 回撥函式返回base64的值
+            callback(base64);
+        }
+    }
+
+    $('#sureCut').click(function(){
+        var canvas = $('#image').cropper('getCroppedCanvas');
+        var base64 = canvas.toDataURL('image/jpeg', 1);
+        $('#image').attr('style', 'visibility: hidden;');
+        $('#cut').attr('src',base64);
+    });
+
+    function save(){
+        $('#send_button').attr('style', 'display:none ;');
+        $('#loading_div').attr('style', '');
+        let canvas = $('#image').cropper('getCroppedCanvas');
+        let base64 = canvas.toDataURL('image/jpeg');
+        $('#base64_send').val(base64);
+        dealImage2(base64);
+        send_lu();
+    }
+
+    function send_lu(){
+        let base64 = $('#base64_send').val();
+        if('https://gostay.tbroc.gov.tw/cv/r3.php' == ''){
+            send_google();
+        }else{
+            $.ajax({
+                type: 'POST',
+                url: 'https://gostay.tbroc.gov.tw/cv/r3.php',
+                contentType: 'application/x-www-form-urlencoded',
+                data: { base64_pic: base64, filename: Math.floor(Math.random()*10000000)},
+                success: function(res) {
+                    let opt = $.trim(res);
+                    if (opt.length == 10) {
+                        let temp_card_id = opt;
+                        if(temp_card_id.charAt(0) == '1'){
+                            var card_id = 'I' + temp_card_id.slice(1);
+                        }else if(temp_card_id.charAt(0) == '0' || temp_card_id.charAt(0) == 'o'){
+                            var card_id = 'O' + temp_card_id.slice(1);
+                        }else{
+                            var card_id = temp_card_id;
+                        }
+                        card_id = card_id.toUpperCase();
+                        if(checkTwID(card_id)){
+                            $('#idno').val(card_id);
+                            $('#loading_div').attr('style', 'display:none ;');
+                            alert('辨識成功!')
+                        }else{
+                            let cookie = getCookieByName('send');
+                            if(cookie == 'Y'){
+                                send_google();
+                            }else{
+                                document.cookie="send=Y";
+                                $('#loading_div').attr('style', 'display:none ;');
+                                $('#send_button').attr('style', '');
+                                alert('無法辨識，請重新上傳圖片(建議使用健保卡)')
+                            }
+                        }
+                    }else{
+                        let cookie = getCookieByName('send');
+                        if(cookie == 'Y'){
+                            send_google();
+                        }else{
+                            document.cookie="send=Y";
+                            $('#loading_div').attr('style', 'display:none ;');
+                            $('#send_button').attr('style', '');
+                            alert('無法辨識，請重新上傳圖片(建議使用健保卡)');
+                        }
+                    }
+                },
+            });
+        }
+    }
+
+    function send_google(){
+        let base64 = $('#base64_send').val();
+        let encodedImg = base64.substring(base64.indexOf(',') + 1);
+        let apiType ='TEXT_DETECTION';
+        let params = {
+            requests: [
+                {
+                    image: { content: encodedImg },
+                    features: [
+                        { type: apiType, maxResults: 10 }
+                    ]
+                }
+            ]
+        };
+        $.ajax({
+                type: 'POST',
+                url: 'https://vision.googleapis.com/v1/images:annotate?key=AIzaSyBnERgzE2zT5t_1fm1nfjMFD5iCg5FO-C8',
+                contentType: 'application/steam',
+                data: JSON.stringify(params),
+                success: function(res) {
+                    console.log(res);
+                    let apiResponse = res.responses[0];
+                    if (apiResponse.error) {
+                        $('#loading_div').attr('style', 'display:none ;');
+                        $('#send_button').attr('style', '');
+                        alert('無法辨識，請重新上傳圖片(建議使用健保卡)')
+                    }
+                    else{
+                        let opt = apiResponse;
+                        for (let a in opt.textAnnotations) {
+                            if (opt.textAnnotations[a].description.length == 10) {
+                                let temp_card_id = opt.textAnnotations[a].description;
+                                if(temp_card_id.charAt(0) == '1'){
+                                    var card_id = 'I' + temp_card_id.slice(1);
+                                }else if(temp_card_id.charAt(0) == '0' || temp_card_id.charAt(0) == 'o'){
+                                    var card_id = 'O' + temp_card_id.slice(1);
+                                }else{
+                                    var card_id = temp_card_id;
+                                }
+                                card_id = card_id.toUpperCase();
+                                if(checkTwID(card_id)){
+                                    $('#idno').val(card_id);
+                                    var error = 'N';
+                                }else{
+                                    var error = 'TW';
+                                }
+                            }
+                        }
+                        if(error != 'N'){
+                            $('#loading_div').attr('style', 'display:none ;');
+                            $('#send_button').attr('style', '');
+                            alert('無法辨識，請重新上傳圖片(建議使用健保卡)')
+                        }else if(error == 'TW'){
+                            $('#loading_div').attr('style', 'display:none ;');
+                            $('#send_button').attr('style', '');
+                            alert('無法辨識，請重新上傳圖片(建議使用健保卡)')
+                        } else{
+                            $('#loading_div').attr('style', 'display:none ;');
+                            alert('辨識成功!')
+                        }
+                    }
+                },
+                error: function (jqXHR, textStatus, errorThrown) {
+                    $('#loading_div').attr('style', 'display:none ;');
+                    $('#send_button').attr('style', '');
+                    alert('無法辨識，請重新上傳圖片(建議使用健保卡)')
+                }
+            }
+        );
+    }
+
+    function rotate() {
+        $('#image').cropper('rotate', 90);
+    }
+
+    function checkTwID(id){
+        //建立字母分數陣列(A~Z)
+        var city = new Array(1,10,19,28,37,46,55,64,39,73,82, 2,11,20,48,29,38,47,56,65,74,83,21, 3,12,30)
+        id = id.toUpperCase();
+        //使用「正規表達式」檢驗格式
+        if (id.search(/^[A-Z](1|2)\d{8}$/i) == -1) {
+            return false;
+        } else {
+            //將字串分割為陣列(IE必需這麼做才不會出錯)
+            id = id.split('');
+            //計算總分
+            var total = city[id[0].charCodeAt(0)-65];
+            for(var i=1; i<=8; i++){
+                total += eval(id[i]) * (9 - i);
+            }
+            //補上檢查碼(最後一碼)
+            total += eval(id[9]);
+            //檢查比對碼(餘數應為0);
+            return ((total%10 == 0 ));
+        }
+    }
+
+    function parseCookie() {
+        var cookieObj = {};
+        var cookieAry = document.cookie.split(';');
+        var cookie;
+        for (var i=0, l=cookieAry.length; i<l; ++i) {
+            cookie = jQuery.trim(cookieAry[i]);
+            cookie = cookie.split('=');
+            cookieObj[cookie[0]] = cookie[1];
+        }
+
+        return cookieObj;
+    }
+
+    function getCookieByName(name) {
+        var value = parseCookie()[name];
+        if (value) {
+            value = decodeURIComponent(value);
+        }
+        return value;
+    }
+
+    function dealImage2(base64){
+        var img = new Image();
+        img.src = base64;
+        img.onload = function(){
+            var that = this;
+            // 預設按比例壓縮
+            var w = that.width,
+                h = that.height,
+                scale = w / h;
+            w = 400 || w;
+            h = (w / scale);
+            // 生成canvas
+            var canvas = document.createElement('canvas');
+            var ctx = canvas.getContext('2d');
+            // 建立屬性節點
+            var anw = document.createAttribute("width");
+            anw.nodeValue = w;
+            var anh = document.createAttribute("height");
+            anh.nodeValue = h;
+            canvas.setAttributeNode(anw);
+            canvas.setAttributeNode(anh);
+            ctx.drawImage(that, 0, 0, w, h);
+            // quality值越小，所繪製出的影象越模糊
+            var base64 = canvas.toDataURL('image/jpeg', 0.7);
+            // 回撥函式返回base64的值
+            $('#base64_pic').val(base64);
+        };
+    }
+
+    function send() {
+        if($('#name').val() == ''){
+            alert('請輸入姓名');
+        }else if($('#idno').val() == '') {
+            alert('請先上傳身分證或健保卡');
+        }else if($('#phone').val() == '' || $('#phone').val().substring(0,2) != '09'){
+            alert('請輸入手機號碼');
+        }else if($('#city').val() == ''){
+            alert('請選擇居住城市');
+        }else if (!$('#customControlValidation').is(":checked") || !$('#customControlValidation2').is(":checked") || !$('#customControlValidation3').is(":checked")) {
+            alert('請勾選我同意');
+        }else if ($('#year').val() > 111 || $('#year').val() < 1) {
+            alert('生日年份錯誤，請輸入民國年');
+        }else if ($('#month').val() > 12 || $('#month').val() < 1) {
+            alert('生日月份錯誤');
+        }else if ($('#day').val() > 31 || $('#day').val() < 1) {
+            alert('生日日期錯誤');
+        }else{
+            if(confirm("請確認身分證辨識是否正確，填寫錯誤資料將導致申請失敗 確認送出?")) {
+
+                let year = Number($('#year').val());
+
+                let new_year = (year+1911);
+
+                let AD = String(new_year) + '-' +  $('#month').val() + '-' + $('#day').val();
+
+                $('#birthday').val(AD);
+
+                $('#send_btn').attr('style', 'display:none;');
+
+                $('#send_form').submit();
+            }
+        }
+    }
+</script>
+
+
+<div class="swal2-container"><div class="swal2-modal" style="display: none" tabindex="-1"><ul class="swal2-progresssteps"></ul><div class="swal2-icon swal2-error"><span class="x-mark"><span class="line left"></span><span class="line right"></span></span></div><div class="swal2-icon swal2-question">?</div><div class="swal2-icon swal2-warning">!</div><div class="swal2-icon swal2-info">i</div><div class="swal2-icon swal2-success"><span class="line tip"></span> <span class="line long"></span><div class="placeholder"></div> <div class="fix"></div></div><img class="swal2-image"><h2></h2><div class="swal2-content"></div><input class="swal2-input"><input type="file" class="swal2-file"><div class="swal2-range"><output></output><input type="range"></div><select class="swal2-select"></select><div class="swal2-radio"></div><label for="swal2-checkbox" class="swal2-checkbox"><input type="checkbox"></label><textarea class="swal2-textarea"></textarea><div class="swal2-validationerror"></div><hr class="swal2-spacer"><button type="button" class="swal2-confirm">OK</button><button type="button" class="swal2-cancel">Cancel</button><span class="swal2-close">×</span></div></div></body></html>
